@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>formularz2</title>
+</head>
+
+<body>
+    <form action="https://formspree.io/reginaf@interia.pl" method="POST" id="form-styled" autocomplete="on">
+        <h1>A simple form</h1>
+        <h2>Form Fundamentals</h2>
+      
+
+        <fieldset>
+            <legend>Customer info</legend>
+
+            <label for="imie">Name:</label><br/>
+        <input type="text" name="imię" id="imie" autofocus required placeholder="Enter your name">  <br/>
+
+
+            <label for="email">Email address:</label><br/>
+            <input type="email" name="email" id="email" required placeholder="Enter your email address"> <br/>
+            <label for="tel">Telephone</label><br/>
+            <input type="tel" name="tel" id="tel" required placeholder="1-234-567-8910" pattern="1-234-567-8910"><br/>
+        </fieldset>
+
+        <fieldset>
+            <legend>Books</legend>
+            <label for="text"></label><br/>
+            <input type="text" name="text" id="text" list="lista-jezyków">
+            <datalist id="lista-jezyków">
+  <option >jezyk angielski</option>
+  <option >jezyk niemiecki</option>
+  <option >jezyk rosyjski</option>
+  <option >jezyk włoski</option>
+  <option >jezyk portugalski</option>
+</datalist>
+            <label for="number">Quantity (Maximum 5):</label>
+            <input type="number" name="number" id="number" min="1" max="5" step="5"><br/>
+
+        </fieldset>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
